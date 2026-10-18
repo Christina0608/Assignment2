@@ -33,7 +33,7 @@ public class SendAMessage {
    String messageText = input.nextLine();
    if (messageText.length() > 250) {
     
-   System.out.println("Message exceeds 250 characters. Please make it.");
+   System.out.println("Message exceeds 250 characters. Please coorect it to 250 characters and not more.");
   }
 
    Message msg = new Message(messageID, recipient, messageText);
