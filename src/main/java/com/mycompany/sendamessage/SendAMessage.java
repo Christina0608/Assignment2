@@ -22,7 +22,7 @@ public class SendAMessage {
    int totalSent = 0;
    for (int i = 1; i <= numMessages; i++) {
     
-   System.out.println(" ");
+   System.out.println("");
   }
    String messageID = String.valueOf((int)(Math.random() * 100));
 
