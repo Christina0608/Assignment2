@@ -1,0 +1,23 @@
+ID: 82911407
+Recipient: +27123456789
+Message: hello
+Hash: 82:0:HELLOHELLO
+-------------------------
+{
+  "messageID": "34401433",
+  "recipient": "+27123456789",
+  "messageText": "tred",
+  "messageHash": "34:0:TREDTRED"
+},
+{
+  "messageID": "65742855",
+  "recipient": "+27123456789",
+  "messageText": "red",
+  "messageHash": "65:0:REDRED"
+},
+{
+  "messageID": "15645124",
+  "recipient": "+27123456789",
+  "messageText": "fred",
+  "messageHash": "15:0:FREDFRED"
+},
