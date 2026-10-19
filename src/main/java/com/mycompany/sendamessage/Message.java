@@ -32,7 +32,7 @@ public class Message {
 
     
     public String checkRecipientCell() {
-        if (recipient.length() <= 10 && recipient.startsWith("+27")) {
+        if (recipient.length() == 12 && recipient.startsWith("+27")) {
             return "Cell phone number successfully captured.";
         } else {
             return "Cell phone number is incorrectly formatted or does not contain an international code.";
@@ -46,6 +46,16 @@ public class Message {
         String lastWord = words[words.length - 1];
         return messageID.substring(0, 2) + ":0:" + firstWord.toUpperCase() + lastWord.toUpperCase();
     }
+    
+    
+public String toJSON() {
+    return "{\n" +
+           "  \"messageID\": \"" + messageID + "\",\n" +
+           "  \"recipient\": \"" + recipient + "\",\n" +
+           "  \"messageText\": \"" + messageText + "\",\n" +
+           "  \"messageHash\": \"" + messageHash + "\"\n" +
+           "},";
+}
 
    
     public String getMessageID() { return messageID; }
